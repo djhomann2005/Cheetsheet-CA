@@ -1,0 +1,59 @@
+body {
+    font-family: Lato, Arial, sans-serif;
+    color: rgb(0, 0, 0);
+}
+
+table , td, th {
+    border: 1px solid;
+}
+
+td, th {
+    padding: 5px 20px;
+}
+
+th {
+    background-color: rgb(127, 255, 212);
+}
+
+.bg-image {
+    opacity: 0.3;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 1920px;
+}
+
+.heading{
+    padding: 0px 30px;
+}
+
+.section-heading {
+    padding: 0px 30px;
+}
+
+.instructions {
+    padding: 0px 30px;
+}
+.html-tag {
+    color: rgb(18, 18, 205);
+    font-family: "Courier New", Arial, monospace;
+    font-weight: 600;
+}
+
+.css-selector {
+    color: rgb(215, 122, 0);
+    font-family: "Courier New", Arial, monospace;
+    font-weight: 600;
+}
+
+.css-property {
+    color: rgb(0, 48, 111);
+    font-family: "Courier New", Arial, monospace;
+    font-weight: 600;
+}
+
+.css-value {
+    color: rgb(0, 151, 68);
+    font-family: "Courier New", Arial, monospace;
+    font-weight: 600;
+}

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Adding Web Fonts | DJ Homann</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <div class="bg-wrap">
+            <img 
+                class="bg-image"
+                src="programming_screen.jpg"
+                alt=""
+            >
+        </div>
+        <main>
+            <h1 class="heading">Adding Web Fonts</h1>
+
+            <div class="heading instructions">
+                <p class="instructions">
+                    Adding web-based fonts to a website can be very simple. There are two
+                    primary ways to accomplish this. One is adding a link to the web font
+                    in the html file. The other is to download the font files locally and
+                    refer to them in the CSS sheet.
+                </p>
+                <h2 class="section-heading">HTML Method</h2>
+                <p class="instructions">
+                    From the page of the web-based font you want to use, copy the link to 
+                    the font. Paste this into the <span class="html-tag">&lthead&gt</span> section of the 
+                    HTML document before the link to your CSS sheet (if you have one). 
+                    This should be ready to use in your CSS sheet now.
+                </p>
+                <h2 class="section-heading">CSS Method</h2>
+                <p class="instructions">
+                    For the CSS method to work, you must have the files stored somewhere
+                    with the website documents. You will want to know the relative path
+                    from the CSS document to the font files. These files should be .tff,
+                    .moff or .moff2 files (or a combination of these).<br>
+                    At the beginning of the CSS document, create a CSS ruleset with the 
+                    selector <span class="css-selector">@font-face</span>. Within the declaration, name this font by 
+                    using the property <span class="css-property">font-family:</span> followed by what you want to call
+                    this font. Your name for the font should be enclosed in double 
+                    quotes (""). Then, use the property <span class="css-property">src:</span> with the value
+                    <span class="css-value">url(relative-path-here)</span>. Now you can use the <span class="css-property">font-family:</span> property
+                    in other CSS rulesets with the value of the name you gave the font.
+                </p>
+                <table class="linking-table">
+                    <thead class="linking-table table-head">
+                        <th>Code Function</th>
+                        <th>Code Syntax</th>
+                    </thead>
+
+                    <tbody class="linking-table table-body">
+                        <tr>
+                            <td>HTML Link</td>
+                            <td class="html-tag">&ltlink href="link_to_web_font"&gt</td>
+                        </tr>
+
+                        <tr>
+                            <td>CSS Selector</td>
+                            <td class="css-selector">@font-face</td>
+                        </tr>
+
+                        <tr>
+                            <td>Font Name</td>
+                            <td class="css-property">font-family</td>
+                        </tr>
+
+                        <tr>
+                            <td>Font File Location</td>
+                            <td class="css-value">url(relative-path)</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h2 class="section-heading">Usage</h2>
+                <p class="instructions">
+                    Now that you have the associated with your website, you can use 
+                    it in your CSS file. This is true whether you used the <span class="html-tag">&ltlink&gt</span> in 
+                    your HTML or the <span class="css-selector">@font-face</span> in your CSS. The variations of the 
+                    font available are determined by the selections you made when
+                    choosing the font. You may have different font weights and
+                    styles, and you can change the size of the text. Use the table 
+                    below for CSS declarations you can use to style your text. 
+                    Note: some options may have no function if the font you used 
+                    doesn't offer the options.
+                </p>
+
+                <table class="styles-table">
+                    <thead class="styles-table table-head">
+                        <th>Font Change</th>
+                        <th>CSS Syntax</th>
+                        <th>Options</th>
+                    </thead>
+
+                    <tbody class="styles-table table-body">
+                        <tr>
+                            <td>Weight</td>
+                            <td class="css-property">font-weight</td>
+                            <td>100-900 in hundreds</td>
+                        </tr>
+
+                        <tr>
+                            <td>Size</td>
+                            <td class="css-property">font-size</td>
+                            <td># px/em/%</td>
+                        </tr>
+
+                        <tr>
+                            <td>Style</td>
+                            <td class="css-property">font-style</td>
+                            <td>normal, italic, bold</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </main>
+    </body>
+</html>
